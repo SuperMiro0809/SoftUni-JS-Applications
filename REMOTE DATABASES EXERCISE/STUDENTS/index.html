@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Students</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <table id="results">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Faculty Number</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <div>
+        <button id="allStudents">Get All Students</button> 
+    </div>
+    <div id="mainForm">
+        <form id="form">
+            <!-- <div> -->
+                <label>ID:</label>
+            <div>    
+                <input id="id" name="id" type="number">
+            </div>
+            <!-- <div> -->
+                <label>First Name:</label>
+            <div>    
+                <input id="firstName" name="firstName" type="text">
+            </div>
+            <!-- <div> -->
+                <label>Last Name:</label>
+            <div>
+                <input id="lastName" name="lastName" type="text">
+            </div>
+            <!-- <div> -->
+                <label>Faculty Number:</label>
+            <div>    
+                <input id="facultyNumber" name="facultyNumber" type="text" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+            </div>
+            <!-- <div> -->
+                <label>Grade:</label>
+            <div>    
+                <input id="grade" name="grade" type="text" onkeypress="return event.charCode >= 48 && event.charCode <= 57 || event.charCode === 46">
+            </div>
+            <div>
+                <button>Submit</button>
+            </div>
+        </form>
+    </div>
+    <script type="module" src="./app.js"></script>
+</body>
+
+</html>
