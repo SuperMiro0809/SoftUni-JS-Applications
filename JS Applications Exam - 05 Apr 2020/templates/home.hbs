@@ -1,0 +1,77 @@
+ 
+{{> header}}
+ <div class="content">
+        <section class="js">
+            <h2>JavaScript</h2>
+            {{#unless JSArticle}}
+            <div style="text-align: center;">
+                    {{> message}}
+                </div>
+            {{else}} 
+            <div class="articles">
+                {{#each JavaScript}}
+                    <article>
+                    <h3>{{title}}</h3>
+                    <p>{{content}}</p>
+                    <a href="#/home/{{objectId}}" class="btn details-btn">Details</a>
+                </article>
+                {{/each}}
+            </div>
+            {{/unless}}
+        </section>
+        <section class="CSharp">
+            <h2>C#</h2>
+            {{#unless CArticle}}
+            <div style="text-align: center;">
+                    {{> message}}
+                </div>
+            {{else}} 
+            <div class="articles">
+                {{#each C}}
+                    <article>
+                    <h3>{{title}}</h3>
+                    <p>{{content}}</p>
+                    <a href="#/home/{{objectId}}" class="btn details-btn">Details</a>
+                </article>
+                {{/each}}
+            </div>
+            {{/unless}}
+        </section>
+        <section class="Java">
+            <h2>Java</h2>
+            {{#unless JavaAarticle}}
+            <div style="text-align: center;">
+                    {{> message}}
+                </div>
+            {{else}} 
+            <div class="articles">
+                {{#each Java}}
+                    <article>
+                    <h3>{{title}}</h3>
+                    <p>{{content}}</p>
+                    <a href="#/home/{{objectId}}" class="btn details-btn">Details</a>
+                </article>
+                {{/each}}
+            </div>
+             {{/unless}}
+        </section>
+        <section class="Pyton">
+            <h2>Pyton</h2>
+            {{#unless PytonArticle}}
+            <div style="text-align: center;">
+                    {{> message}}
+                </div>
+            {{else}} 
+            <div class="articles">
+                {{#each Pyton}}
+                    <article>
+                    <h3>{{title}}</h3>
+                    <p>{{content}}</p>
+                    <a href="#/home/{{objectId}}" class="btn details-btn">Details</a>
+                </article>
+                {{/each}}
+            </div>
+            {{/unless}}
+        </section>  
+    </div>
+    {{> footer}}
